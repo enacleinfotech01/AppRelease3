@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cv_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/cv_header"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ic_back"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:src="@drawable/cv_back_state_pressed" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/cv_regular"
+                android:gravity="center"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ic_pass"
+            android:layout_width="980px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:layout_marginTop="60px"
+            android:src="@drawable/cv_changepass_state_pressed" />
+
+        <LinearLayout
+            android:id="@+id/pattern_lay"
+            android:layout_width="980px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:layout_marginTop="10px"
+            android:background="@drawable/cv_enable_pattern_state_pressed"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_pattern_onoff"
+                    android:layout_width="90px"
+                    android:layout_height="48px"
+                    android:src="@drawable/cv_off" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ic_changepattern"
+            android:layout_width="980px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:layout_marginTop="10px"
+            android:src="@drawable/cv_changepattern_state_pressed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <include layout="@layout/cv_ads_adsdk_google_native_ad" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/menu_bg"
+        android:layout_width="310px"
+        android:layout_height="360px"
+        android:background="@drawable/cv_menu_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic_selectall"
+                android:layout_width="290px"
+                android:layout_height="100px"
+                android:src="@drawable/cv_selectall_state_pressed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic_deselectall"
+                android:layout_width="290px"
+                android:layout_height="100px"
+                android:src="@drawable/cv_deselectall_state_pressed" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic_delete"
+                android:layout_width="290px"
+                android:layout_height="100px"
+                android:src="@drawable/cv_delete_option_state_pressed" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

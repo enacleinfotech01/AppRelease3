@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mainLay2"
+        android:layout_width="465px"
+        android:layout_height="480px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:background="@drawable/cv_image_bg"
+        android:backgroundTint="#1f2c0f"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mainLay"
+            android:layout_width="465px"
+            android:layout_height="400px"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_1sdp"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingRight="@dimen/_1sdp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/img"
+                android:layout_width="465px"
+                android:layout_height="400px"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/ic_play"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerInParent="true"
+                android:src="@drawable/cv_play_icon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_lay"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/cv_text_bg"
+            android:backgroundTint="#82a626"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/foldername"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/cv_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="Folder Name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/vid_count"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.22"
+                android:fontFamily="@font/cv_regular"
+                android:gravity="end|center_vertical"
+                android:paddingRight="@dimen/_5sdp"
+                android:singleLine="true"
+                android:text="30"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

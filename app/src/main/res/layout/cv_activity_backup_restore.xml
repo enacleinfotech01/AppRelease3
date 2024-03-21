@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cv_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/cv_header"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:src="@drawable/cv_back_state_pressed" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/cv_regular"
+            android:gravity="center"
+            android:text="Backup &amp; Restore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/watch_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_17sdp"
+            android:fontFamily="@font/cv_medium"
+            android:gravity="center"
+            android:text="Backup &amp; Restore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/cv_regular"
+            android:gravity="center"
+            android:text="Watch Free Video to backup and  restore your data."
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/cv_regular"
+            android:gravity="center"
+            android:text="@string/backup_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/cv_regular"
+            android:gravity="center"
+            android:text="@string/restore_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <ImageView
+            android:id="@+id/ic_watch"
+            android:layout_width="630px"
+            android:layout_height="110px"
+            android:layout_gravity="center"
+            android:layout_marginTop="180px"
+            android:src="@drawable/cv_watch_state_pressed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/backup_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:layout_below="@+id/topbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/ic_take"
+            android:layout_width="980px"
+            android:layout_height="120px"
+            android:src="@drawable/cv_takebackup_state_pressed" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp" />
+
+        <ImageView
+            android:id="@+id/ic_restore"
+            android:layout_width="980px"
+            android:layout_height="120px"
+            android:src="@drawable/cv_restorebackup_state_pressed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/_cv_ads_adsdk_layout_google_banner_ad" />
+    </LinearLayout>
+</RelativeLayout>

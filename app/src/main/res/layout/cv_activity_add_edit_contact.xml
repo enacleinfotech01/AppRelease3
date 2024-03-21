@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cv_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/cv_header"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:src="@drawable/cv_back_state_pressed" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/cv_medium"
+            android:gravity="center"
+            android:text="Contacts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bg_lay"
+        android:layout_width="980px"
+        android:layout_height="720px"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60px"
+        android:background="@drawable/cv_add_contact_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lay_name"
+            android:layout_width="880px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:fontFamily="@font/cv_regular"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="880px"
+                android:layout_height="110px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/cv_edit_bg"
+                android:fontFamily="@font/cv_regular"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_number"
+            android:layout_width="880px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40px"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_1sdp"
+                android:fontFamily="@font/cv_regular"
+                android:text="@string/number"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <EditText
+                android:id="@+id/edt_number"
+                android:layout_width="880px"
+                android:layout_height="110px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/cv_edit_bg"
+                android:digits="0123456789"
+                android:fontFamily="@font/cv_regular"
+                android:inputType="textNoSuggestions|numberDecimal"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="@dimen/_15sdp">
+
+            <ImageView
+                android:id="@+id/ic_save"
+                android:layout_width="880px"
+                android:layout_height="110px"
+                android:src="@drawable/cv_save_contact_state_pressed" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <include layout="@layout/_cv_ads_adsdk_layout_google_banner_ad" />
+    </LinearLayout>
+</LinearLayout>

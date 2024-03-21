@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cv_bg_color"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/_25sdp">
+
+    <ImageView
+        android:id="@+id/splash_ic"
+        android:layout_width="827px"
+        android:layout_height="589px"
+        android:layout_gravity="center"
+        android:src="@drawable/cv_splash_image" />
+
+    <TextView
+        android:id="@+id/splash_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:fontFamily="@font/cv_medium"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fontFamily="@font/cv_medium"
+        android:gravity="center"
+        android:text="@string/recovery_question_for_recover_password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:fontFamily="@font/cv_medium"
+        android:gravity="center_vertical"
+        android:text="@string/choose_your_favourite_questions"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:id="@+id/lay_ques"
+        android:layout_width="980px"
+        android:layout_height="120px"
+        android:layout_marginTop="30px"
+        android:background="@drawable/cv_enterpassword_bg"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/_7sdp">
+
+        <TextView
+            android:id="@+id/tv_ques"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/cv_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="@string/who_is_your_best_friend"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/ic_down"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_gravity="center_vertical"
+                android:src="@drawable/cv_dropdown_state_pressed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:fontFamily="@font/cv_medium"
+            android:gravity="center_vertical"
+            android:text="@string/answer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <EditText
+            android:id="@+id/edt_answer"
+            android:layout_width="980px"
+            android:layout_height="120px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/cv_enterpassword_bg"
+            android:fontFamily="@font/cv_regular"
+            android:inputType="textNoSuggestions"
+            android:paddingLeft="@dimen/_8sdp"
+            android:paddingRight="@dimen/_8sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <ImageView
+            android:id="@+id/btn_submit"
+            android:layout_width="980px"
+            android:layout_height="120px"
+            android:src="@drawable/cv_save_state_pressed" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <include layout="@layout/_cv_ads_adsdk_layout_google_banner_ad" />
+    </LinearLayout>
+</LinearLayout>

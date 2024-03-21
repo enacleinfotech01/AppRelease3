@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_4sdp">
+
+    <LinearLayout
+        android:id="@+id/lay_apps"
+        android:layout_width="980px"
+        android:layout_height="150px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:background="@drawable/cv_text_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/ic_app_icon"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:src="@drawable/cv_notes_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_appname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cv_regular"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:paddingRight="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/ic_select"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:src="@drawable/cv_app_deselect" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

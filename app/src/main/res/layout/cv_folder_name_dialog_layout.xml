@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/popup"
+        android:layout_width="980px"
+        android:layout_height="552px"
+        android:background="@drawable/cv_folder_popup_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/cv_medium"
+                android:gravity="center"
+                android:text="@string/enter_folder_name_where_you_want_to_export_your_backup_data"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="900px"
+                android:layout_height="100px"
+                android:background="@drawable/cv_enter_name_bg"
+                android:fontFamily="@font/cv_regular"
+                android:hint="@string/enter_folder_name"
+                android:paddingLeft="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:gravity="end|top"
+            android:paddingRight="@dimen/_12sdp">
+
+            <ImageView
+                android:id="@+id/ic_ok"
+                android:layout_width="250px"
+                android:layout_height="100px"
+                android:src="@drawable/cv_oknew_state_pressed" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
